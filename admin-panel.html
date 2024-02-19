@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>star-teck</title>
+    <!-- custom-css-link -->
+    <link rel="stylesheet" href="assects/style.css">
+
+    <!-- slider cdn from swiper  -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- font awoseme link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- bootstrap -->
+    <link rel="stylesheet" href="assects/css/bootstrap.min.css">   
+ 
+    <!-- tailwind asript -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- w3 school icon -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <!-- bootstrap-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body class="bg-blue-50">
+        <!-- header section -->
+        <div class="hidden xl:block">
+            <nav class="grid  grid-cols-9   gap-2 items-center bg-gray-900 p-3">
+                <div class=" "> <a href="index.html"><img src="assects/Images/logo.png" alt=""></a></div>
+                <div class="col-span-4">
+                    <div class="bg-white h-10 rounded-lg">
+                        <input class="w-11/12 h-10 rounded-lg outline-none pl-5" type="text" placeholder="   Search"><button><i class="fa-solid fa-magnifying-glass text-blue-950"></i></button>
+                    </div>
+                    
+                </div>
+                
+                <div class=" "> 
+                    <a href="offer.html">
+                        <div class="text-white flex justify-start gap-2 items-center">
+                            <div><i class="fa-solid fa-gift"></i></div>
+                            <div >
+                                <a href="offer.html">
+                                    <h3>offers</h3>
+                                    <p class="text-sm text-gray-500 ">latest offers</p>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" ">
+                    <a href="mobile-dels.html">
+                        <div class="text-white flex justify-start gap-2 items-center">
+                            <div><i class="fa-solid fa-bolt"></i></div>
+                            <div>
+                                <h3>Mobile Deals </h3>
+                                <p class="text-sm text-gray-500">special Derals</p>
+                            </div>
+                        </div>
+                    </a>        
+                </div>
+                <div class=" ">
+                    <a href="profile.html">
+                        <div class="text-white flex justify-between items-center">
+                            <div><i class='fas fa-user-alt' style="color: white;"></i> </div>
+                            <div >
+                                <h3>Account</h3>
+                                <p class="text-sm text-gray-500">Resister or Login</p>
+                            </div>
+                        </div>
+                    </a>
+                </div >
+                <div class="text-white ">
+                    <a href="admin-panel.html">
+                    <button class="bg-blue-800 rounded-lg p-2 font-bold w-11/12">PC Builder</button>
+    
+                    </a>
+                </div>
+            </nav>
+        </div>
+    
+        <!--mobile respomcive navbar  -->
+        <div class="mobile-nav flex justify-between p-3 bg-gray-900 xl:hidden">
+            <div class="logo">
+                <img src="assects/Images/logo.png" alt="">
+            </div>
+                    
+            <div class="offcanvas offcanvas-end text-bg-dark" id="demo">
+                <div class="offcanvas-header">
+                <h1 class="offcanvas-title">All Menu</h1>
+                <button type="button" class="btn-close  btn-light text-reset flex items-center justify-center" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark text-2xl"></i></button>
+                </div>
+                <div class="offcanvas-body flex flex-col gap-5">
+                    <div class=" "> 
+                        <a href="offer.html">
+                            <div class="text-white flex justify-start gap-4 items-center">
+                                <div><i class="fa-solid fa-gift"></i></div>
+                                <div >
+                                    <a href="offer.html">
+                                        <h3>offers</h3>
+                                        <p class="text-sm text-gray-500 ">latest offers</p>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" ">
+                        <a href="mobile-dels.html">
+                            <div class="text-white flex justify-start gap-4 items-center">
+                                <div><i class="fa-solid fa-bolt"></i></div>
+                                <div>
+                                    <h3>Mobile Deals </h3>
+                                    <p class="text-sm text-gray-500">special Derals</p>
+                                </div>
+                            </div>
+                        </a>        
+                    </div>
+                    <div class=" ">
+                        <a href="profile.html">
+                            <div class="text-white flex justify-start gap-4  items-center">
+                                <div><i class='fas fa-user-alt' style="color: white;"></i> </div>
+                                <div >
+                                    <h3>Account</h3>
+                                    <p class="text-sm text-gray-500">Resister or Login</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div >
+                    <div class="text-white ">
+                        <a href="admin-panel.html">
+                        <button class="bg-blue-800 rounded-lg p-2 font-bold w-11/12">PC Builder</button>
+            
+                        </a>
+                    </div>
+                    <h2>All Product</h2>
+                    <div class="flex flex-wrap gap-3">                  
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Desktop</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Laptop</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Computer</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Monitor</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">UPS</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Phone</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Tablet</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Camera</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Seeruty</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Networking</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Softwore</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Server</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Gadegt</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Gaming</a></div>
+    
+    
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Button to open the offcanvas sidebar -->
+            <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <i class="fa-solid fa-bars text-white text-2xl"></i>
+            </button>
+        </div>
+    
+        <!-- nav section -->
+        <section class="h-11 bg-white shadow-lg hidden xl:block">
+                    <div class="flex justify-around ">
+                        <div class="dropdown">
+                            <button class="dropbtn">Desktop 
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div> 
+                        <div class="dropdown">
+                            <button class="dropbtn">Laptop
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Computer
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Monitor
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">UPS 
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Phone
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Tablet 
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Camera 
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Security 
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Networking
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div><div class="dropdown">
+                            <button class="dropbtn">Softwor 
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Server
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Gadegt
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Gaiming 
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+        </section>
+
+    <!-- login from starts -->
+    <div id="loginfrom" class="container my-5">
+        <div class="panale-login-head p-4 bg-cyan-950 text-white">
+            <h2 class="text-2xl">LOGIN to Admin Panel</h2>
+        </div>
+        <div class="panale-login-form px-32   bg-slate-200">
+            <div class=" flex justify-center  p-3"> <img src="assects/Images/logo.png" alt=""></div>
+            
+            <div class="form-floating mb-3 ">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            
+            <br>
+              <div class="form-check form-switch form-check-reverse">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+                <label class="form-check-label" for="flexSwitchCheckReverse">Remember me</label>
+              </div>
+              <br>
+              <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                <button onclick="showAdmin()" class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</button><br>
+
+            <br>
+
+            <h2 id="incpass" class="text-red-600  underline hidden">Password Incorret !</h2>
+            <br><br>
+        </div>
+        
+        
+    </div>
+
+    <!-- login from ends -->
+
+    <!-- admin panale -->
+    <div id="admin-panale" class="container my-5 hidden">
+        <div class="panale-head p-4 bg-cyan-950 text-white">
+            <h2 class="text-2xl">Admin Panel</h2>
+        </div>
+        <div class="panale-side d-flex bg-slate-200 " style="height: 600px;">
+            <div class="left-side w-1/4 ">
+                <div class="btn-group-vertical w-11/12 ml-3 mt-2 gap-2 ">
+                    <button type="button" class="btn  bg-cyan-950  hover:border-cyan-900 p-4 disabled text-white ">Panel Menu</button>
+                    <button type="button" class="btn  bg-white btn-light hover:border-cyan-900 p-4 "> <a href="add-product.html" target="iframe_a">Add Product</a></button>
+                    <button type="button" class="btn  bg-white btn-light hover:border-cyan-900 p-4"><a href="remove-pdt.html"   target="iframe_a">Remove Product</a></button>
+                    <button type="button" class="btn  bg-white btn-light hover:border-cyan-900 p-4"><a href="show-product.html" target="iframe_a" >view Product</a></button>
+                    <button type="button" class="btn  bg-white btn-light hover:border-cyan-900 p-4">Show Orders</button>
+                    <button type="button" class="btn  bg-white btn-light hover:border-cyan-900 p-4">Dashbord</button>
+                    <button type="button" class="btn  bg-white btn-light hover:border-cyan-900 p-4">Incites</button>
+
+                  </div>
+            </div>
+            <div class="right-side w-3/4 m-2 border ">
+                <iframe src="add-product.html" name="iframe_a" height="100%" width="100%" title="Iframe Example"></iframe>
+    
+            </div>
+        </div>
+        
+    </div>
+    <!-- admin panale -->
+
+    <!-- footer section -->
+        <!-- <footer class="bg-cyan-950 my-10">
+
+        <div class="p-5 flex justify-around" >
+          <div>
+            <h3 class="text-white my-3">SUPPORT</h3>
+            <div class="flex gap-4 my-5 p-2 border rounded-full lg:px-4 border-gray-500">
+              <div class="flex justify-center items-center border-r-2 p-3"><i class="fa-solid fa-phone text-white"></i></div>
+              <div><p class="text-gray-500">10AM-7PM</p><h1 class="text-red-600 text-2xl">16793</h1></div>
+              
+            </div>
+            <div class="flex gap-4 my-5 p-2 border rounded-full lg:px-4 border-gray-500">
+              <div class="flex justify-center items-center border-r-2 p-3"><i class="fa-solid fa-location-dot text-white"></i></div>
+              <div><p class="text-gray-500">STore Location</p><h2 class="text-red-600 text-2xl">Find Our Location</h2></div>
+            </div>
+          </div>
+          <div class="p-4 mx-3">
+            <h3 class="text-white mb-4">ABOUT US</h3>
+            <div>
+              <p class="text-gray-500 my-1.5">EMI tearm</p>
+              <p class="text-gray-500 my-1.5">Privacy Policy</p>
+              <p class="text-gray-500 my-1.5">Star Point Policy</p>
+              <p class="text-gray-500 my-1.5">Brands</p>
+            </div>
+          </div>
+          <div class="my-12 hidden lg:block">
+            <p class="text-gray-500 my-1.5">EMI tearm</p>
+              <p class="text-gray-500 my-1.5">Privacy Policy</p>
+              <p class="text-gray-500 my-1.5">Star Point Policy</p>
+              <p class="text-gray-500 my-1.5">Brands</p>
+          </div>
+          <div class="my-12 hidden lg:block">
+            <p class="text-gray-500 my-1.5">EMI tearm</p>
+              <p class="text-gray-500 my-1.5">Privacy Policy</p>
+              <p class="text-gray-500 my-1.5">Star Point Policy</p>
+              <p class="text-gray-500 my-1.5">Brands</p>
+          </div>
+         
+        </div>
+        <hr>
+        <div class="p-8 lg:flex justify-around">
+      
+          
+          <iframe class="container lg:w-1/2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58520.91490603383!2d90.46120394774893!3d23.548424160095166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755addfa6be8f6d%3A0x743bc3c6e0d9c53a!2sMunshiganj!5e0!3m2!1sen!2sbd!4v1704124444060!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="px-10 lg:w-1/2">
+            <h2 class="text-white text-3xl mb-8">Login From</h2>
+            <input class="w-full mb-7 h-10 rounded-full" type="text" placeholder="   Enter our Name"><br>
+            <input class="w-full mb-7 h-10 rounded-full" type="text" type="text" placeholder="   Enter our Email"><br>
+            <input class="w-full mb-7 h-10 rounded-full" type="text"type="text" placeholder="   Enter our Password"><br>
+            <input class="w-full mb-7 h-10 rounded-full" type="text"type="text" placeholder="   Re-type your Password"><br>
+            <button class="w-full mb-7 h-10 bg-gray-600 text-white rounded-full">Submit</button>
+          </div>
+        </div>
+        <hr>
+        <div class="p-8 flex justify-center ">
+          <p class="text-white">
+            © 2023 Star Tech Ltd | All rights reserved
+          </p>
+        </div>
+        </footer> -->
+
+    <!-- custon js -->
+    <script src="assects/js/admin-panale.js"></script>
+    
+    <!-- bootstrap js -->
+    <script src="assects/js/bootstrap.min.js"></script>
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
