@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>star-teck</title>
+    <title>invoice</title>
     <!-- custom-css-link -->
     <link rel="stylesheet" href="assects/style.css">
+
     <!-- slider cdn from swiper  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <!-- font awoseme link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- daisy ui css -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+      <!-- bootstrap -->
+    <link rel="stylesheet" href="assects/css/bootstrap.min.css">   
+ 
     <!-- tailwind asript -->
     <script src="https://cdn.tailwindcss.com"></script>
-     <!-- w3 school icon -->
+
+    <!-- w3 school icon -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>
         body{
@@ -25,8 +32,8 @@
       </style>
 </head>
 <body class="bg-blue-50">
-    <!-- header section -->
-    <div class="hidden xl:block">
+        <!-- header section -->
+        <div class="hidden xl:block">
             <nav class="grid  grid-cols-9   gap-2 items-center bg-gray-900 p-3">
                 <div class=" "> <a href="index.html"><img src="assects/Images/logo.png" alt=""></a></div>
                 <div class="col-span-4">
@@ -78,104 +85,92 @@
                     </a>
                 </div>
             </nav>
-    </div>
-        
-
-        
-    <!--mobile respomcive navbar  -->
-    <div class="mobile-nav flex justify-between items-center px-7 py-4 bg-gray-950 xl:hidden z-50">
+        </div>
+    
+        <!--mobile respomcive navbar  -->
+        <div class="mobile-nav flex justify-between p-3 bg-gray-900 xl:hidden">
             <div class="logo">
                 <img src="assects/Images/logo.png" alt="">
             </div>
-            <div class="drawer drawer-end w-3">
-                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content ">
-                  <!-- Page content here -->
-                  <label for="my-drawer-4" class="drawer-button "><i class="fa-solid fa-bars text-white text-2xl"></i></label>
-                </div> 
-                <div class="drawer-side z-50">
-                  <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
-                  <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-                    <!-- Sidebar content here -->
-                    <li><a>
-                        <div class=" "> 
-                            <a href="offer.html">
-                                <div class= "flex justify-start gap-4 items-center">
-                                    <div><i class="fa-solid fa-gift"></i></div>
-                                    <div >
-                                       
-                                     <h3>offers</h3>
-                                    <p class="text-sm text-gray-500 ">latest offers</p>
-                                       
-                                        
-                                    </div>
+                    
+            <div class="offcanvas offcanvas-end text-bg-dark" id="demo">
+                <div class="offcanvas-header">
+                <h1 class="offcanvas-title">All Menu</h1>
+                <button type="button" class="btn-close  btn-light text-reset flex items-center justify-center" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark text-2xl"></i></button>
+                </div>
+                <div class="offcanvas-body flex flex-col gap-5">
+                    <div class=" "> 
+                        <a href="offer.html">
+                            <div class="text-white flex justify-start gap-4 items-center">
+                                <div><i class="fa-solid fa-gift"></i></div>
+                                <div >
+                                    <a href="offer.html">
+                                        <h3>offers</h3>
+                                        <p class="text-sm text-gray-500 ">latest offers</p>
+                                    </a>
+                                    
                                 </div>
-                            </a>
-                        </div>
-                    </a></li>
-                    <li><a>
-                        <div class=" ">
-                            <a href="mobile-dels.html">
-                                <div class=" flex justify-start gap-4 items-center">
-                                    <div><i class="fa-solid fa-bolt"></i></div>
-                                    <div>
-                                        <h3>Mobile Deals </h3>
-                                        <p class="text-sm text-gray-500">special Derals</p>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" ">
+                        <a href="mobile-dels.html">
+                            <div class="text-white flex justify-start gap-4 items-center">
+                                <div><i class="fa-solid fa-bolt"></i></div>
+                                <div>
+                                    <h3>Mobile Deals </h3>
+                                    <p class="text-sm text-gray-500">special Derals</p>
                                 </div>
-                            </a>        
-                        </div>
-                    </a></li>
-                    <li>
-                        <div class=" ">
-                            <a href="profile.html">
-                                <div class=" flex justify-start gap-4  items-center">
-                                    <div><i class='fas fa-user-alt' "></i> </div>
-                                    <div >
-                                        <h3>Account</h3>
-                                        <p class="text-sm text-gray-500">Resister or Login</p>
-                                    </div>
+                            </div>
+                        </a>        
+                    </div>
+                    <div class=" ">
+                        <a href="profile.html">
+                            <div class="text-white flex justify-start gap-4  items-center">
+                                <div><i class='fas fa-user-alt' style="color: white;"></i> </div>
+                                <div >
+                                    <h3>Account</h3>
+                                    <p class="text-sm text-gray-500">Resister or Login</p>
                                 </div>
-                            </a>
-                        </div >  
-                    </li>
-                    <li>
-                        <div class="text-white ">
-                            <a href="admin-panel.html">
-                            <button class="bg-blue-800 rounded-lg p-2 font-bold w-full ">PC Builder</button>
-                
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <h2>All Product</h2>
+                            </div>
+                        </a>
+                    </div >
+                    <div class="text-white ">
+                        <a href="admin-panel.html">
+                        <button class="bg-blue-800 rounded-lg p-2 font-bold w-11/12">PC Builder</button>
+            
+                        </a>
+                    </div>
+                    <h2>All Product</h2>
                     <div class="flex flex-wrap gap-3">                  
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Desktop</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Laptop</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Computer</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Monitor</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">UPS</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Phone</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Tablet</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Camera</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Seeruty</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Networking</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Softwore</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Server</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Gadegt</a></div>
-                        <div class="bg-gray-400  rounded-md p-3 text-white text-xl"><a href="#">Gaming</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Desktop</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Laptop</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Computer</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Monitor</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">UPS</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Phone</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Tablet</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Camera</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Seeruty</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Networking</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Softwore</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Server</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Gadegt</a></div>
+                        <div class="bg-gray-900  rounded-md p-3 text-white text-xl"><a href="#">Gaming</a></div>
     
     
                     </div>
-                    </li>
-                  </ul>
                 </div>
-            </div>         
+            </div>
             
-    </div>
+            <!-- Button to open the offcanvas sidebar -->
+            <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <i class="fa-solid fa-bars text-white text-2xl"></i>
+            </button>
+        </div>
     
-    <!-- nav section -->
-    <section class="h-11 bg-white shadow-lg hidden xl:block">
+        <!-- nav section -->
+        <section class="h-11 bg-white shadow-lg hidden xl:block">
                     <div class="flex justify-around ">
                         <div class="dropdown">
                             <button class="dropbtn">Desktop 
@@ -319,81 +314,139 @@
                         
                         
                     </div>
-    </section>
-    <!-- srarch section -->
-    <section class="h-11 bg-white shadow-lg mt-0.5 w-full flex justify-evenly items-center  text-sm text-gray-500 ">
-        <div class=" mx-5 w-11/12 ">
-            <i class="fa-solid fa-house "></i> <input id="search-field" type="text" class="active:border-none hover:border-none outline-none w-10/12" placeholder="  / Search......">
-            
-        </div>
-        <button class="w-1/12" onclick="handleSearch()" ><i class="fa-solid fa-magnifying-glass text-2xl text-blue-950"></i></button>
-        
-    </section>
-    <!-- secction card -->
-    <!-- <section class="p-5">
-        
-        <div id="loading-spinner" class="text-center my-40 hidden">
-            <span class="loading loading-spinner text-primary loading-lg"></span>
-        </div>
-       
-
-        <div id="mobilr-cards" class="flex gap-5">
-            <div id="card " class="p-5 bg-white w-1/3 rounded-lg">
-                <img class="h-2/3" src="assects/Images/offer-img/viewsonic-offer-400x400.png" alt="">
-                <div class="flex justify-between my-3">
-                    <p class="text-gray-500 text-base "> <i class="fa-regular fa-calendar-days mr-2"></i>18 Dec 2023 - 15 Jan 2024</p> <p class="text-gray-500 text-sm"><i class="fa-solid fa-location-dot mr-2"></i>All Branches</p>
-                </div>
-                <hr>
-                <div class=" flex flex-col justify-around items-center mb-5 mt-3 gap-3">
-                    <h2 class="text-gray-800 text-xl font-bold">ViewSonic Monitor Offer</h2>
-                    <p class="text-gray-500">Buy ViewSonic Monitor & Get 1000 Taka Cashback</p>
-                    <button class="bg-blue-600 text-white  w-1/3 h-10 rounded-lg">View Detsils</button>
-                </div>
-            </div>   
-        </div>
-       
-        <div id="show-all-container" class="hidden text-center my-8">
-            <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
-        </div>
-
-    </section> -->
-
-    <!-- progremming code -->
-    <main class="container mx-auto mt-8 z-10">
-
-        
-
-        <!-- search result -->
-        <section >
-            <!-- spinner or loader -->
-            <div id="loading-spinner" class="text-center my-40 hidden">
-                <span class="loading loading-spinner text-primary loading-lg"></span>
-            </div>
-            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 z-10">
-            </div>
-            <!-- show all button -->
-            <div id="show-all-container" class="hidden text-center my-8">
-                <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
-            </div>
         </section>
 
-        <!-- Show Details modal -->
-        <!-- Open the modal using ID.showModal() method -->
-        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle w-full"  >
-            <form method="dialog" class="modal-box " >
-                <h3 id="show-detail-phone-name" class="font-bold text-3xl"></h3>
-                <div id="show-detail-container" >
 
+        <!-- invoice section -->
+        <div class="container  w-9/12 mt-20 p-0  shadow-2xl">
+
+            <div class="bg-gray-300 text-cyan-950 p-4 flex justify-between items-center">
+                <div class="md:flex items-center gap-2">
+                    <div><img class="image-fluid" src="assects/Images/logo.png" alt=""></div>
+                    <div class=" hidden md:block"><h2 class="text-xl">STAR TECH</h2><p class="text-sm italic text-gray-500">As a Documentation</p></div>
                 </div>
-                <div class="modal-action">
-                    <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn">Close</button>
+                <div>
+                    <h1 class="uppercase text-3xl md:text-6xl">invoice</h1>
                 </div>
-            </form>
-        </dialog>
-
-    </main>
-
+            </div>
+            <div class="invoice-menu text-white md:flex px-4  py-2 justify-between bg-cyan-950">
+              <p><span>Invoice-number :</span> 375438722</p>  
+              <p><span>Date:</span>34/3/2024</p>              
+            </div>
+            <div class="m-4  md:flex justify-between bg-gray-200 p-4">
+                <div class="uppercase text-gray-600 " >
+                    <h1 class="text-2xl text-cyan-950 mb-2">invoiced to</h1>
+                    <h2 class="text-xl">sumaya islam</h2>
+                    <p>3453 north town ,las angales ,usa</p>
+                    <p>3ewf453@gmail.com</p>
+                    <p>+23583429734565</p>
+                </div>
+                <div class="lg:w-1/3 ">
+                    <h2 class="text-cyan-950 uppercase text-xl mb-2">payment Methode</h2>
+                    <div class="flex  text-gray-700">
+                        <div class="w-3/5">
+                            <p>Account Number </p>
+                            <p>Account Name </p>
+                            <p>UserName</p>
+                        </div>
+                        <div class="w-1/5">
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                        </div>
+                        <div  class="w-1/5 text-gr">
+                            <p>240982</p>
+                            <p>Egegres</p>
+                            <p>Ehtjkks</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="md:m-4">
+                <table class="table table-bordered border-light table-secondary">
+                    <thead class="">
+                      <tr class="">
+                        <th class="uppercase"  style="background-color:rgb(6, 51, 65); color: white; ">Item describtion</th>
+                        <th class="uppercase"  style="background-color:rgb(6, 51, 65); color: white;">item price</th>
+                        <th class="uppercase" style="background-color:rgb(6, 51, 65); color: white;">Quantity</th>
+                        <th class="uppercase" style="background-color:rgb(6, 51, 65); color: white;">total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="bg-light"></td></tr>
+                      <tr>
+                        <td ><b class="text-xl ">Laptop</b> <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                        <td>$496</td>
+                        <td>04</td>
+                        <td>$16845</td>
+                      </tr>
+                      <tr>
+                        <td> <span class="text-xl font-bold ">Televition </span><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                        <td>$496</td>
+                        <td>04</td>
+                        <td>$16845</td>
+                      </tr>
+                      <tr>
+                        <td><span class="text-xl font-bold ">Phone</span> <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                        <td>$496</td>
+                        <td>04</td>
+                        <td>$16845</td>
+                      </tr>
+                      <tr>
+                        <td><span class="text-xl font-bold ">Freez</span><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                        <td>$496</td>
+                        <td>04</td>
+                        <td>$16845</td>
+                      </tr>
+                      <tr>
+                        <td> <span class="text-xl font-bold ">Computer</span><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                        <td>$496</td>
+                        <td>04</td>
+                        <td>$16845</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+            </div>
+            <div class="m-4 mb-2 bg-gray-200 p-3 md:flex gap-4 justify-between " style="border: 1px solid rgb(6, 51, 65) ;">
+                <div class="md:w-2/3">
+                    <h2 class="bg-cyan-950 text-white p-2 mb-2 inline-block">terms and conditions</h2>
+                    <ul class="text-gray-600">
+                        <li>1.Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                        <li>2.Labore perspiciatis quisquam nam, iusto quidem dolores?</li>
+                        <li>3.Minima, veniam. Repellendus architecto quia ratione dolore!</li>
+                        <li>4.Repellat quo perferendis soluta numquam quibusdam eaque?</li>
+                    </ul>
+                </div>
+                <div class="mdw-1/3">
+                    <div class="flex justify-between uppercase text-lg p-2" style="border-bottom: 1px solid rgb(6, 51, 65) ;"  > <p>subtotal</p> <p>$6857</p></div>
+                    <div  class="flex justify-between uppercase text-lg p-2" style="border-bottom: 1px solid rgb(6, 51, 65) ;"> <p>tax: vat 10%</p> <p>$344</p></div>
+                    <div class="flex justify-between uppercase text-lg p-2" style="border-bottom: 1px solid rgb(6, 51, 65) ;"> <p>discount</p> <p>$357</p></div>
+                </div>
+            </div>
+            <h2 class="text-cyan-950 text-right mx-5 text-xl uppercase">grand total <span>    --</span> $458759</h2>
+            <div class="mx-5 my-2">
+                <img src="" alt="">
+                <p>Report <span class="uppercase font-bold">thekang</span></p>
+                <p class="text-sm text-gray-500 italic">Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="md:flex justify-between p-3 bg-cyan-950 text-white gap-3">
+                <div>
+                    <h2>Thanks For Your Oders</h2>
+                </div>
+                <div class="flex justify-between gap-5 mt-8 ">
+                    <div class="flex justify-between gap-3 items-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>3453 north town ,las angales ,usa</p>
+                    </div>
+                    <div class="flex justify-between gap-3 items-center">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+23583429734565</p>
+                    </div>
+                </div>
+            </div>
+        </div>
    <!-- footer section -->
    <footer class="bg-cyan-950 my-10">
 
@@ -438,7 +491,7 @@
   
       
       <iframe class="container lg:w-1/2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58520.91490603383!2d90.46120394774893!3d23.548424160095166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755addfa6be8f6d%3A0x743bc3c6e0d9c53a!2sMunshiganj!5e0!3m2!1sen!2sbd!4v1704124444060!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="px-10 lg:w-1/2">
+      <div class="px-10 hidden lg:w-1/2">
         <h2 class="text-white text-3xl mb-8">Login From</h2>
         <input class="w-full mb-7 h-10 rounded-full" type="text" placeholder="   Enter our Name"><br>
         <input class="w-full mb-7 h-10 rounded-full" type="text" type="text" placeholder="   Enter our Email"><br>
@@ -453,11 +506,10 @@
         © 2023 Star Tech Ltd | All rights reserved
       </p>
     </div>
-    </footer>
+</footer>
 
-
-    <!-- scripts -->
-    <script src="assects/js/mobileDels.js"></script>
-    
+        
+<!-- bootstrap js -->
+<script src="assects/js/bootstrap.min.js"></script>
 </body>
 </html>

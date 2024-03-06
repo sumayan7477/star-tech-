@@ -120,7 +120,7 @@ const showPhoneDetails = (phone) => {
         </div>
         <div class="infos  p-3 mr-5">
             <p class="text-gray-500 text-sm uppercase">latest product</p>
-            <h2 class="text-3xl uppercase">apple iphone</h2>
+            <h2 class="text-3xl uppercase">${phone.name}</h2>
             <p class="absolute right-10 uppercase text-xs bg-gray-300 rounded-md p-1 inline-block">with fitures</p>
             <div class="price flex justify-between items-center my-3">
                 <div class="left ">

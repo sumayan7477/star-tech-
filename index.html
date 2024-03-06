@@ -16,14 +16,19 @@
     <!-- font awoseme link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- bootstrap -->
-  <link rel="stylesheet" href="assects/css/bootstrap.min.css">
+    
     <!-- tailwind asript -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assects/css/bootstrap.min.css">
     <!-- w3 school icon -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-
+    <style>
+      body{
+       max-width: 1300px;
+       margin: 0 auto  !important;
+      }
+    </style>
 </head>
 <body class="bg-blue-50">
     
@@ -64,12 +69,11 @@
             </a>        
         </div>
         <div class=" ">
-            <a href="profile.html">
-                <div class="text-white flex justify-between items-center">
-                    <div><i class='fas fa-user-alt' style="color: white;"></i> </div>
+            <a href="">
+                <div class="text-white flex justify-around items-center">
+                    <div><a href="profile.html"><i class='fas fa-user-alt' style="color: white;"></i></a> </div>
                     <div >
-                        <h3>Account</h3>
-                        <p class="text-sm text-gray-500">Resister or Login</p>
+                        <a href="shoping-curt.html"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                 </div>
             </a>
@@ -318,17 +322,17 @@
  <section class="lg:flex p-5">
 
     <div class="lg:w-4/5"><img src="assects/Images/express-delivery-girl-receiving-parcel-home-banner-982x500.webp" alt=""></div>
-    <div class="lg:w-1/5 mt-3 lg:mt-0 ">
-        <div class="p-5 w-full lg:block  h-72 bg-yellow-200">
+    <div class="lg:w-1/5 mt-1 lg:mt-0 ">
+        <div class="p-3 w-full lg:block  h-72 bg-yellow-200">
             <div  class="text-center">
                 <h2 class="font-bold">Computer Product</h2>
                 <p class="text-gray-500">Choose Two Products to Compare</p>
             </div>
-            <div class="mt-5 shadow-lg"><input class="w-full text-sm h-10 shadow-md" type="text" placeholder="   Search and select product"></div>
-            <div class="mt-5 shadow-lg"><input class="w-full text-sm h-10 shadow-md" type="text" placeholder="   Search and select product"></div>
-            <div class="border-2 text-blue-800 hover:bg-blue-800 hover:text-white p-1 border-blue-800 mt-5 "><button class="w-full border-blue-800">View Comparison</button></div>
+            <div class="mt-3 shadow-lg"><input class="w-full text-sm h-10 shadow-md" type="text" placeholder="   Search and select product"></div>
+            <div class="mt-3 shadow-lg"><input class="w-full text-sm h-10 shadow-md" type="text" placeholder="   Search and select product"></div>
+            <div class="border-2 text-blue-800 hover:bg-blue-800 hover:text-white p-1 border-blue-800 mt-3 "><button class="w-full border-blue-800">View Comparison</button></div>
          </div>
-         <div class="   mt-5">
+         <div class="   mt-3 mb-3">
             <img src="assects/Images/introducing-laptop-finder-home.webp" alt="">
          </div>
     </div>
@@ -337,7 +341,7 @@
 
  <!-- type section -->
  <section>
-    <div class=" grid grid-cols-2 gap-1 lg:flex p-5 lg:p-0 mt-8 justify-around">
+    <div class=" grid grid-cols-1 md:grid-cols-2 gap-1 lg:flex p-5 md:p-2 lg:p-0 mt-8 justify-around">
         <div class=" shadow-md flex  lg:w-1/5 h-20 items-center pl-2 bg-white rounded-lg justify-around">
             <div class="w-1/5 h-2/3 mr-2 bg-orange-600 rounded-full flex justify-center items-center text-white" ><i class="fa-solid fa-laptop text-2xl"></i></div>
             <div class="w-4/5">
@@ -373,7 +377,7 @@
     </div>
  </section>
 
- <section class="mt-5">
+ <section class="mt-3 w-full mb-3">
     <marquee class=" bg-white p-2 m-10 rounded-lg" direction="left">1st January Monday, our all outlets are open. Additionally, our online activities will remain open.</marquee>
  </section>
 
@@ -381,14 +385,14 @@
  <!-- features catagory -->
 
 
- <section class=" p-3 lg:p-0 container">
+ <section class=" p-3 lg:p-0 container mx-auto">
 
-    <div class="flex flex-col justify-center items-center mt-5 mb-10">
+    <div class="flex flex-col justify-center items-center mt-3 mb-3">
         <h2 class="text-3xl font-bold">
             Featured Category</h2>
         <p class=" text-gray-400">Get Your Desired Product from Featured Category!</p>
     </div>
-    <div class="grid grid-cols-3 md:grid-cols-4 gap-2 lg:gap-0 lg:flex justify-around mb-2 lg:mb-5">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-0 lg:flex justify-around mb-2 lg:mb-5">
       <div class="w-36 h-36 bg-white flex flex-col  justify-center items-center rounded-lg shadow-xl">
           <img src="assects/Images/drone-48x48.png" alt="">
           <p class="hover:text-red-600 text-base text-gray-700">Drone</p>
@@ -422,7 +426,7 @@
         <p class="hover:text-red-600 text-base text-gray-700">HeadPhone</p>
       </div>
   </div>
-  <div class="grid grid-cols-3 md:grid-cols-4 gap-2 lg:gap-0 lg:flex justify-around ">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-0 lg:flex justify-around  ">
     <div class="w-36 h-36 bg-white flex flex-col  justify-center items-center rounded-lg shadow-xl">
         <img src="assects/Images/home-appliances-48x48.png" alt="">
         <p class="hover:text-red-600 text-base text-gray-700">Home aplns</p>
@@ -461,22 +465,22 @@
 
  <!-- products card -->
 
- <section class="mt-32 container">
-        <div class="flex flex-col justify-center items-center mt-5 mb-5">
+ <section class="mt-32 mx-auto  p-3">
+        <div class="flex flex-col justify-center items-center mt-3 mb-3 ">
           <h2 class="text-3xl font-bold">
               Featured Products</h2>
           <p class=" text-gray-400">Check & Get Your Desired Product!</p>
         </div>
-        <div class="p-5 grid grid-cols-2 lg:flex gap-3">
+        <div class="p-1 grid grid-cols-2 lg:flex gap-2">
               
               <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
                 <div class="h-1"></div>
-                <div class=" mt-5" >
-                  <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+                <div class=" mt-3 mb-3" >
+                  <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
                 </div>
                 <div class="flex justify-center w-full"><img src="assects/Images/tv-img/g244f-e2-01-200x200.webp" alt=""></div>
                 
-                <div class="p-5">
+                <div class="p-3">
                   <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
                 </div>
                 <div>
@@ -485,12 +489,12 @@
               </div>
               <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
                 <div class="h-1"></div>
-                <div class=" mt-5" >
-                  <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+                <div class=" mt-3 mb-3" >
+                  <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
                 </div>
                 <div class="flex justify-center w-full"><img src="assects/Images/tv-img/g274qpf-01-200x200.png" alt=""></div>
                 
-                <div class="p-5">
+                <div class="p-3">
                   <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
                 </div>
                 <div>
@@ -499,12 +503,12 @@
               </div>
               <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
                 <div class="h-1"></div>
-                <div class=" mt-5" >
-                  <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+                <div class=" mt-3 mb-3" >
+                  <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
                 </div>
                 <div class="flex justify-center w-full"><img src="assects/Images/tv-img/mp223-06-200x200.webp" alt=""></div>
                 
-                <div class="p-5">
+                <div class="p-3">
                   <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
                 </div>
                 <div>
@@ -513,12 +517,12 @@
               </div>
               <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
                 <div class="h-1"></div>
-                <div class=" mt-5" >
-                  <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+                <div class=" mt-3 mb-3" >
+                  <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
                 </div>
                 <div class="flex justify-center w-full"><img src="assects/Images/tv-img/optix-mag275r2-04-200x200.webp" alt=""></div>
                 
-                <div class="p-5">
+                <div class="p-3">
                   <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
                 </div>
                 <div>
@@ -527,12 +531,12 @@
               </div>
               <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
                 <div class="h-1"></div>
-                <div class=" mt-5" >
-                  <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+                <div class=" mt-3 mb-3" >
+                  <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
                 </div>
                 <div class="flex justify-center w-full"><img src="assects/Images/tv-img/pro-mp251-03-200x200.webp" alt=""></div>
                 
-                <div class="p-5">
+                <div class="p-3">
                   <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
                 </div>
                 <div>
@@ -540,16 +544,16 @@
                 </div>
               </div>
         </div>
-        <div class="p-5 grid grid-cols-2 lg:flex gap-3">
+        <div class="p-1 grid grid-cols-2 lg:flex gap-2">
               
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/lap-img/16arh7h-01-200x200.webp" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -558,12 +562,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/lap-img/gf63-thin-01-200x200.webp" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -572,12 +576,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/lap-img/ideapad-3-15alc6-200x200.webp" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -586,12 +590,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/lap-img/ideapad-flex-5-14alc7-08-200x200.webp" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -600,12 +604,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/lap-img/modern-14-c12m-01-200x200.webp" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -615,16 +619,16 @@
 
 
         </div>
-        <div class="p-5 grid grid-cols-2 lg:flex gap-3">
+        <div class="p-1 grid grid-cols-2 lg:flex gap-2">
               
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/phone-img/iphone-15-pro-max-natural-titanium-official-200x200.jpg" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -633,12 +637,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/phone-img/osmo-mobile-se-01-200x200.webp" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -647,12 +651,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/phone-img/pop-3r-01-200x200.webp" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -661,12 +665,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/phone-img/rog-ally-rc71l-02-200x200.webp" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -675,12 +679,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/phone-img/tello-200x200.jpg" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -690,16 +694,16 @@
 
 
         </div>
-        <div class="p-5 grid grid-cols-2 lg:flex gap-3">
+        <div class="p-1 grid grid-cols-2 lg:flex gap-2">
               
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/other-img/ch120-x-1-200x200.jpg" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -708,12 +712,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/other-img/ecotank-l3250-01-200x200.jpg" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -722,12 +726,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/other-img/mag-ch120-i-200x200.jpg" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -736,12 +740,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/other-img/p2506-01-200x200.jpg" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -750,12 +754,12 @@
           </div>
           <div class="w-11/12 lg:w-1/5 shadow-lg h-96 rounded-md bg-white ">
             <div class="h-1"></div>
-            <div class=" mt-5" >
-              <p class="mt-5 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
+            <div class=" mt-3 mb-3" >
+              <p class="mt-3 mb-3 w-1/2 bg-purple-700  text-white rounded-r-lg text-sm">   EarnPoint:150</p>
             </div>
             <div class="flex justify-center w-full"><img src="assects/Images/other-img/t5-01-200x200.webp" alt=""></div>
             
-            <div class="p-5">
+            <div class="p-3">
               <h2>MSI PRO MP223 21.45" Full HD Business Monitor</h2>
             </div>
             <div>
@@ -788,7 +792,7 @@
 <!-- footer section -->
 <footer class="bg-cyan-950 my-10">
 
-  <div class="p-5 flex justify-around" >
+  <div class="p-3 flex justify-around" >
     <div>
       <h3 class="text-white my-3">SUPPORT</h3>
       <div class="flex gap-4 my-5 p-2 border rounded-full lg:px-4 border-gray-500">
